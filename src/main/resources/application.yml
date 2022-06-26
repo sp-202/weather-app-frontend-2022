@@ -5,7 +5,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: loginMicroservices
+        - id: weatherApiService
           uri: http://localhost:8081
           predicates:
             - Path=/weather_api/**
